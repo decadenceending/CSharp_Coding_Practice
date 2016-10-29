@@ -12,9 +12,15 @@ class RectangleArea
         return area;
     }
 
+    static double NextStep(double city1,double city2)
+    {
+      double area=GetRectangleArea(6,1);
+      double step= city1*city2*area;
+      return step;
+    }
     static void Main()
     {
-        double area=GetRectangleArea(5, 7);
-        Console.WriteLine(area);
+      double step=NextStep(2,3);
+      Console.WriteLine(step);
     }
 }
